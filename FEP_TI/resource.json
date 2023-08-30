@@ -1,0 +1,7 @@
+{
+        "number_node": 1,
+        "cpu_per_node": 4,
+        "gpu_per_node": 0,
+        "queue_name": "M1_4_0",
+        "group_size": 50
+}

@@ -1,0 +1,156 @@
+{
+    "type_map": [
+        "O", 
+        "H"
+    ], 
+    "mass_map": [
+        16, 
+        1
+    ], 
+    "init_data_prefix": "/data/DPGEN_fep_debug/DPGEN_fep_test/data", 
+    "init_data_sys": [
+        "md"
+    ], 
+    "init_neu_data_sys": [
+        "neu"
+    ], 
+    "init_red_data_sys": [
+        "red"
+    ], 
+    "sys_configs": [
+        [
+            "/data/DPGEN_fep_debug/DPGEN_fep_test/data/md/POSCAR"
+        ], 
+        [
+            "/data/DPGEN_fep_debug/DPGEN_fep_test/data/md/POSCAR"
+        ]
+    ], 
+    "_comment": " that's all ", 
+    "numb_models": 4, 
+    "train_param": "input.json", 
+    "default_training_param": {
+        "model": {
+            "type_map": [
+                "O",
+                "H"
+            ],
+            "descriptor": {
+                "type": "se_e2_a",
+                "sel": [
+                    16,
+                    4
+                ],
+                "rcut_smth": 0.5,
+                "rcut": 5.0,
+                "neuron": [
+                    25,
+                    50,
+                    100
+                ],
+                "resnet_dt": false,
+                "axis_neuron": 16,
+                "seed": 1,
+                "activation_function": "tanh",
+                "type_one_side": false,
+                "precision": "float64",
+                "trainable": true,
+                "exclude_types": [],
+                "set_davg_zero": false
+            },
+            "fitting_net": {
+                "neuron": [
+                    120,
+                    120,
+                    120
+                ],
+                "resnet_dt": false,
+                "seed": 1,
+                "type": "ener",
+                "numb_fparam": 0,
+                "numb_aparam": 0,
+                "activation_function": "tanh",
+                "precision": "float64",
+                "trainable": true,
+                "rcond": 0.001,
+                "atom_ener": []
+                
+            }
+        },
+        "learning_rate": {
+            "type": "exp",
+            "start_lr": 0.001,
+            "decay_steps": 200
+        },
+        "loss": {
+            "start_pref_e": 0.02,
+            "limit_pref_e": 1,
+            "start_pref_f": 1000,
+            "limit_pref_f": 1,
+            "start_pref_v": 0.0,
+            "limit_pref_v": 0.0
+        },
+        "training": {
+            "_set_prefix": "set",
+            "stop_batch": 40000,
+            "_batch_size": 1,
+            "disp_file": "lcurve.out",
+            "disp_freq": 1000,
+            "numb_test": 4,
+            "save_freq": 1000,
+            "save_ckpt": "model.ckpt",
+            "disp_training": true,
+            "time_training": true,
+            "profiling": false,
+            "profiling_file": "timeline.json",
+            "_comment": "that's all"
+        }
+    },
+    "model_devi_dt": 0.0005, 
+    "model_devi_skip": 0, 
+    "model_devi_f_trust_lo": 0.12, 
+    "model_devi_f_trust_hi": 0.3, 
+    "model_devi_clean_traj": true, 
+    "model_devi_taut": 0.05,
+    "model_devi_jobs": [
+        {
+            "sys_idx": [
+                0
+            ], 
+            "temps": [
+                330
+            ], 
+            "press": [
+                1
+            ], 
+            "trj_freq": 10, 
+            "nsteps": 2000, 
+            "ensemble": "nvt", 
+            "_idx": "00"
+        }, 
+        {
+            "sys_idx": [
+                1
+            ], 
+            "temps": [
+                330
+            ], 
+            "press": [
+                1
+            ], 
+            "trj_freq": 10, 
+            "nsteps": 5000, 
+            "ensemble": "nvt", 
+            "_idx": "01"
+        }
+
+    ], 
+    "ratio_failed": 0.20, 
+    "fp_style": "cp2k", 
+    "shuffle_poscar": false, 
+    "fp_task_max": 30, 
+    "fp_task_min": 1, 
+    "fp_pp_path": ".", 
+    "fp_pp_files": [],
+    "neu_external_input_path":"/data/test/DP-GEN test/input_neu.inp" ,
+    "red_external_input_path":"/data/test/DP-GEN test/input_red.inp"
+}

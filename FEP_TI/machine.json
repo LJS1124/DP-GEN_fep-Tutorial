@@ -1,0 +1,24 @@
+{
+        "batch_type": "Lebesgue",
+        "context_type": "LebesgueContext",
+        "local_root" : "./",
+        "remote_profile":{
+          "email": "1123797556@qq.com",
+          "password": "q1123797556!",
+          "program_id":13544 ,
+            "keep_backup":true,
+            "input_data":{
+              "job_type": "container",
+              "log_file": "log.lammps",
+              "grouped":true,
+              "job_name": "lammps run",
+              "disk_size": 200,
+              "scass_type":"c4_m15_1 * NVIDIA T4",
+              "platform": "ali",
+              "image_name":"registry.dp.tech/dptech/deepmd-kit:2.1.5-cuda11.6",
+              "checkpoint_files": "sync_files",
+              "checkpoint_time":30,
+              "on_demand":0
+            }
+        }
+}
