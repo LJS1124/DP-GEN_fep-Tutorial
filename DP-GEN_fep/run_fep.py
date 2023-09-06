@@ -4995,6 +4995,8 @@ def run_iter(param_file, machine_file):
         ii += 1
         iter_name = make_iter_name(ii)
         sepline(iter_name, "=")
+        if ii >= 1:
+            break
         for jj in range(numb_task):
             if ii * max_tasks + jj <= iter_rec[0] * max_tasks + iter_rec[1]:
                 continue
