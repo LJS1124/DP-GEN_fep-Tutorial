@@ -1,3 +1,9 @@
+import random, os, sys, dpdata
+import numpy as np
+import subprocess as sp
+import scipy.constants as pc
+from distutils.version import LooseVersion
+
 def make_fep_lammps_input(
     ensemble,
     conf_file,
