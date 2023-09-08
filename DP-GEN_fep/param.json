@@ -7,7 +7,7 @@
         16, 
         1
     ], 
-    "init_data_prefix": "/data/DPGEN_fep_debug/DPGEN_fep_test/data", 
+    "init_data_prefix": "/data/DP-GEN_fep-Tutorial/DPGEN_fep/data", 
     "init_data_sys": [
         "md"
     ], 
@@ -19,10 +19,10 @@
     ], 
     "sys_configs": [
         [
-            "/data/DPGEN_fep_debug/DPGEN_fep_test/data/md/POSCAR"
+            "/data/DP-GEN_fep-Tutorial/DPGEN_fep/data/md/POSCAR"
         ], 
         [
-            "/data/DPGEN_fep_debug/DPGEN_fep_test/data/md/POSCAR"
+            "/data/DP-GEN_fep-Tutorial/DPGEN_fep/data/md/POSCAR"
         ]
     ], 
     "_comment": " that's all ", 
@@ -107,7 +107,7 @@
     },
     "model_devi_dt": 0.0005, 
     "model_devi_skip": 0, 
-    "model_devi_f_trust_lo": 0.12, 
+    "model_devi_f_trust_lo": 0.25, 
     "model_devi_f_trust_hi": 0.3, 
     "model_devi_clean_traj": true, 
     "model_devi_taut": 0.05,
@@ -122,8 +122,8 @@
             "press": [
                 1
             ], 
-            "trj_freq": 10, 
-            "nsteps": 2000, 
+            "trj_freq": 100, 
+            "nsteps": 50000, 
             "ensemble": "nvt", 
             "_idx": "00"
         }, 
@@ -137,8 +137,8 @@
             "press": [
                 1
             ], 
-            "trj_freq": 10, 
-            "nsteps": 5000, 
+            "trj_freq": 100, 
+            "nsteps": 50000, 
             "ensemble": "nvt", 
             "_idx": "01"
         }
@@ -151,6 +151,6 @@
     "fp_task_min": 1, 
     "fp_pp_path": ".", 
     "fp_pp_files": [],
-    "neu_external_input_path":"/data/test/DP-GEN test/input_neu.inp" ,
-    "red_external_input_path":"/data/test/DP-GEN test/input_red.inp"
+    "neu_external_input_path":"/data/DP-GEN_fep-Tutorial/DP-GEN_fep/data/input_neu.inp" ,
+    "red_external_input_path":"/data/DP-GEN_fep-Tutorial/DP-GEN_fep/data/input_red.inp"
 }
