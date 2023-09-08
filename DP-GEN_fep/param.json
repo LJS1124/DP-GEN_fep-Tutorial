@@ -147,10 +147,10 @@
     "ratio_failed": 0.20, 
     "fp_style": "cp2k", 
     "shuffle_poscar": false, 
-    "fp_task_max": 30, 
+    "fp_task_max": 5, 
     "fp_task_min": 1, 
     "fp_pp_path": ".", 
     "fp_pp_files": [],
-    "neu_external_input_path":"/data/DP-GEN_fep-Tutorial/DP-GEN_fep/data/input_neu.inp" ,
-    "red_external_input_path":"/data/DP-GEN_fep-Tutorial/DP-GEN_fep/data/input_red.inp"
+    "neu_external_input_path":"/data/DP-GEN_fep-Tutorial/DP-GEN_fep/input_neu.inp" ,
+    "red_external_input_path":"/data/DP-GEN_fep-Tutorial/DP-GEN_fep/input_red.inp"
 }
