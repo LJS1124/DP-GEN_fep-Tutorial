@@ -55,8 +55,9 @@ from dpgen.generator.lib.lammps import (
     get_all_dumped_forces,
     get_dumped_forces,
     make_lammps_input,
-    make_fep_lammps_input,
+    #make_fep_lammps_input,
 )
+from lammps import make_fep_lammps_input
 from dpgen.generator.lib.make_calypso import (
     _make_model_devi_buffet,
     _make_model_devi_native_calypso,
