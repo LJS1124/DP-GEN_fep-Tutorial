@@ -9,8 +9,8 @@
         "context_type": "LebesgueContext",
         "local_root" : "./",
         "remote_profile":{
-          "email": "1123797556@qq.com",
-          "password": "q1123797556!",
+          "email": "",
+          "password": "",
           "program_id":13544,
             "keep_backup":true,
             "input_data":{
@@ -44,8 +44,8 @@
         "context_type": "LebesgueContext",
         "local_root" : "./",
         "remote_profile":{
-          "email": "1123797556@qq.com",
-          "password": "q1123797556!",
+          "email": "",
+          "password": "",
           "program_id":13544 ,
             "keep_backup":true,
             "input_data":{
@@ -79,8 +79,8 @@
         "context_type": "LebesgueContext",
         "local_root" : "./",
         "remote_profile":{
-          "email": "1123797556@qq.com",
-          "password": "q1123797556!",
+          "email": "",
+          "password": "",
           "program_id":13544 ,
             "keep_backup":true,
             "input_data":{
